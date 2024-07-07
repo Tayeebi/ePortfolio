@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1b4b0bdfe7.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png" class="logo">
+                <ul id="sidemenus">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">My works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Fardin</span> Tayeebi <br> From Bangladesh.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!---------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user.png" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h4 class="sub-title">About Me</h4>
+                    <p>
+                        I am pursuing a Bachelor of Science in Computer Science and Engineering (CSE) at the American International University-Bangladesh (AIUB). With a solid foundation in software development, data science, and artificial intelligence, I am passionate about
+                        leveraging technology to solve real-world problems. Throughout my academic journey, I have worked on projects like a Java-based food delivery system and an online super shop application using C#. Additionally, I have built a single
+                        MOSFET sound amplifier and a water level indicator. My goal is to become a versatile professional skilled in both software development and data-driven decision-making, with a particular interest in AI's transformative potential.
+                        I am committed to continuous learning and eager to contribute to innovative projects. In my free time, I enjoy exploring new technologies, participating in coding challenges, and collaborating on research initiatives. I am excited
+                        about the endless possibilities in software development, data science, and AI engineering.
+
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('achivement')">Achivement</p>
+                        <p class="tab-links" onclick="opentab('video')">Video Intro</p>
+                    </div>
+                    <!---------------skill------------->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software Development</span><br>Web and Mobile app Development.</li>
+                            <li><span>Problem-solving</span><br>Strong analytical and troubleshooting abilitiess.</li>
+                            <li><span>Team Colaboration</span><br>Effective communication and cooperation.</li>
+                        </ul>
+                    </div>
+                    <!---------------Experience------------->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>january 2024 - March 2024</span><br>Volunteer, DRISE Research Team</li>
+                        </ul>
+                    </div>
+                    <!---------------Education------------->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Current</span><br>B.Sc. in CSE at American International University Banglafesh.</li>
+                            <li><span>2018 - 2020</span><br>HSC from BPATC School and College.</li>
+                        </ul>
+                    </div>
+                    <!---------------Video intro------------>
+                    <div class="tab-contents" id="video">
+                        <video width="100%" controls>
+                            <source src="image/intro.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <!---------------Achivement------------>
+                    <div class="tab-contents" id="achivement">
+                        <ul>
+                            <li><span>DRISE Research Volunteer Certificate (NINS)</span><br>Recognized for volunteer work with the DRISE research team at NINS Bangladesh.</li>
+                            <li><span>Cisco IT Essentials Certified</span><br>Certified in fundamental IT skills by Cisco.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------services----------->
+
+    <div id="services">
+        <div class="container">
+            <h4 class="sub-title">My Services</h4>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software Delelopment</h2>
+                    <p>Custom software solutions tailored to meet client needs using Java, C#, and other modern programming languages.</p>
+                    <a href="#contact">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>Web Development</h2>
+                    <p>Creating dynamic and user-friendly websites using HTML, CSS, JavaScript, and backend technologies to deliver a seamless online experience.
+                    </p>
+                    <a href="#contact">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX</h2>
+                    <p> Designing intuitive and visually appealing interfaces to enhance user experience and engagement.</p>
+                    <a href="#contact">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------my work----------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h4 class="sub-title">My Work</h4>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work-1.png">
+                    <div class="layer">
+                        <h3>Online Shop</h3>
+                        <p>C# platform for online shopping and secure checkouts.</p>
+                        <a href="https://github.com/Tayeebi/OOP2-Project-Section-D" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="image/work-3.png">
+                    <div class="layer">
+                        <h3>Food Delivery app</h3>
+                        <p>Java app for ordering and tracking food deliveries.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="image/work-2.png">
+                    <div class="layer">
+                        <h3>MOSFET Sound Amplifier</h3>
+                        <p> Developed a sound amplifier using a MOSFET to enhance audio signals.</p>
+                        <a href="https://youtu.be/uKd7LQw1EeU" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--------Contact----------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> fardin.tayeebi.24@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +8801919206150</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/tayeebi24/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/fardintayeebi/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/md-fardin-tayeebi-sami-95b70b29b/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/FardinTayeebi"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="image/CV.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Fardin. Created a website using independent learning and practical application.</p>
+        </div>
+    </div>
+
+    <!--------about----------->
+    <script>
+        function opentab(tabname) {
+            var i;
+            var x = document.getElementsByClassName("tab-contents");
+            var tablinks = document.getElementsByClassName("tab-links");
+
+            for (i = 0; i < x.length; i++) {
+                x[i].classList.remove("active-tab");
+            }
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+            }
+
+            document.getElementById(tabname).classList.add("active-tab");
+            event.currentTarget.classList.add("active-link");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenus");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
